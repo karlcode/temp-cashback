@@ -1,0 +1,1204 @@
+<html class="js-focus-visible" data-js-focus-visible="">
+  <head lang="en">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+      @font-face {
+        font-weight: 400;
+        font-family: "Sharp Grotesk";
+        font-style: normal;
+        src: local("Sharp Grotesk Book"), local("SharpGrotesk-Book");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/SharpGroteskBook20.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-family: "Sharp Grotesk";
+        font-style: normal;
+        src: local("Sharp Grotesk Medium"), local("SharpGrotesk-Medium");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/SharpGroteskMedium20.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-weight: 400;
+        font-family: "Cooper Lt BT";
+        font-style: normal;
+        src: local("Cooper Lt BT Regular"), local("CooperLtBT-Regular");
+        src: url("https://zip-co-media.imgix.net/global-stylesheets/fonts/CooperLight.woff2")
+          format("woff2");
+        font-display: swap;
+      }
+
+      body {
+        padding: 0px;
+        margin: 0px;
+        font-family: Sharp Grotesk, sans-serif;
+        -webkit-text-size-adjust: 100%;
+        width: 100%;
+      }
+
+      #top-section {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        padding: 0px;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(245, 246, 252, 0) 30%,
+          rgb(29, 29, 29) 155%
+        );
+        background-position: center center;
+        background-size: auto 100%;
+      }
+
+      #brand-section {
+        height: 100px;
+        padding: 0 0 0 0px;
+        position: absolute;
+        bottom: 0;
+        left: 24px;
+      }
+
+      #logo-section {
+        height: 72px;
+        float: left;
+        width: 72px;
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+      }
+
+      #logo-image {
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+        height: 72px;
+        float: left;
+        width: 72px;
+      }
+
+      #logo-image-greyscale {
+        border-radius: 100px;
+        padding: 0 0 50 0px;
+        background-repeat: round;
+        height: 72px;
+        float: left;
+        width: 72px;
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+      }
+
+      #name-section {
+        height: 72px;
+        width: 200px;
+        float: left;
+        margin-left: 16px;
+      }
+
+      #top-section-heading {
+        color: white;
+        font-family: Sharp Grotesk;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.3px;
+        margin: 0;
+        margin-top: 15px;
+      }
+
+      #top-section-subheading {
+        color: white;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        margin: 0;
+        margin-top: 2px;
+      }
+
+      .copy {
+        padding: 16px 16px 8px 16px;
+      }
+
+      h1 {
+        font-family: Cooper Lt BT, serif;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #1b1323;
+      }
+
+      p {
+        font-size: 15px;
+        color: #3d3644;
+        line-height: 22px;
+        letter-spacing: 0.4px;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: none;
+        color: #411361;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .how-to {
+        height: 100%;
+        padding: 0px 16px 28px 16px;
+      }
+
+      h2 {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin: 0;
+        color: #1b1323;
+      }
+
+      .num-list {
+        display: flex;
+      }
+
+      .num-list p {
+        padding-left: 16px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        float: left;
+        width: 91%;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 95%;
+      }
+
+      .numbers {
+        float: left;
+        width: 20.8px;
+        height: 20.8px;
+      }
+
+      .offer-terms {
+        height: 100%;
+        padding: 0px 16px 40px 16px;
+      }
+
+      .box {
+        border-radius: 8px;
+        background: #f8f8f9;
+        width: 100%;
+        height: 100%;
+        padding: 24px 0px;
+      }
+
+      .box h {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 13px;
+        color: #1b1323;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        padding: 0px 16px 0px 16px;
+      }
+
+      .box p {
+        margin: 0;
+        font-size: 13px;
+        color: #655368;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        padding: 0px 16px 0px 16px;
+      }
+
+      #additional-terms-conditions {
+        padding-top: 16px;
+      }
+
+      hr {
+        margin-left: 16px;
+        margin-right: 16px;
+        border: 1px solid #e8e8ec;
+      }
+
+      .bottom-container {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.85);
+      }
+
+      .button {
+        background-color: #411361;
+        border-radius: 8px;
+        height: 50px;
+        margin: 24px 24px 40px 24px;
+      }
+
+      .button a {
+        display: table;
+        height: 100%;
+        width: 100%;
+      }
+
+      .button p {
+        position: relative;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .bottom-terms-conditions {
+        padding: 40px 24px 150px 24px;
+      }
+
+      .bottom-terms-conditions h {
+        font-family: Sharp Grotesk, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+      }
+
+      .bottom-terms-conditions p {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+      }
+
+      .bottom-terms-conditions li {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        color: #655368;
+        padding: 0;
+      }
+
+      .terms-conditions {
+        padding: 40px 24px 150px 24px;
+      }
+    </style>
+  </head>
+
+  <body onload="getCashbackOffer()">
+    <div
+      id="top-section"
+      style="
+        background-image: linear-gradient(
+            rgba(245, 246, 252, 0) 30%,
+            rgb(29, 29, 29) 155%
+          ),
+          url('https://static-zip.imgix.net/store-assets/city-beach-background.png?w=320&amp;h=400');
+      "
+    >
+      <div id="brand-section">
+        <div id="logo-section">
+          <div id="logo-image-greyscale" style="display: none"></div>
+          <div
+            id="logo-image"
+            style="
+              background-image: url('https://images.ctfassets.net/f49r9japosra/25qGVSYEmM8g8Q3ujErq7p/eb8427329c654139df076447ed1bfb43/CityBeach_logo_300x300__1_.png');
+            "
+          ></div>
+        </div>
+        <div id="name-section">
+          <p id="top-section-heading">City Beach</p>
+          <p id="top-section-subheading">Cashback offer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">
+      <h1 id="heading">6% Cashback</h1>
+      <!-- <p id="sub-heading"></p> -->
+    </div>
+
+    <div class="how-to">
+      <h2>How to earn &amp; redeem cashback</h2>
+      <div class="num-list">
+        <img
+          class="numbers img"
+          id="1"
+          src="https://images.ctfassets.net/uzuajys4cwqf/7AO1u1tdvloGGDziEi4YZK/cb1039355c8fcc231bee96df475a675a/number1.png"
+        />
+        <p>Click the "Shop now" button below</p>
+      </div>
+      <div class="num-list">
+        <img
+          class="numbers img"
+          id="2"
+          src="https://images.ctfassets.net/uzuajys4cwqf/731XVTU1rO5M82yrTIuX4B/6c7f9a839bcee3e83cd748d7d16516a4/number2.png"
+        />
+        <p>Shop as usual (and stay within the app during your purchase)</p>
+      </div>
+      <div class="num-list">
+        <img
+          class="numbers img"
+          id="2"
+          src="https://images.ctfassets.net/uzuajys4cwqf/7LqCc1U0wQl0wsPNoZqo1h/76c6606e3200fc9f8f9bb420181e5678/number3.png"
+        />
+        <p id="how-to-step-3">
+          Select Zip at checkout and pay with your Zip Account
+        </p>
+      </div>
+      <div class="num-list">
+        <img
+          class="numbers img"
+          id="2"
+          src="https://images.ctfassets.net/uzuajys4cwqf/14afJidopNBYykaLYxr0bg/2e98bb727a6e8ce0c310cbcb9b40b9cc/number4.png"
+        />
+        <p>Redeem cashback when you reach your Reward goal</p>
+      </div>
+    </div>
+
+    <div class="offer-terms">
+      <div class="box">
+        <h>Promotion terms and conditions:</h>
+        <p>
+          <i id="offer-terms"
+            >Click this promotion tile and transact online at City Beach using
+            your Zip Account at checkout to earn 6% cashback per eligible
+            transaction. Redeemable when you reach the Rewards goal. Reward
+            Program T&amp;Cs apply.</i
+          >
+        </p>
+
+        <p id="additional-terms-conditions"></p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="bottom-terms-conditions">
+      <h>Terms and conditions</h>
+      <p>
+        <strong>ZIP REWARDS PROGRAM - GENERAL TERMS AND CONDITIONS </strong>
+      </p>
+      <p>
+        <em>Current as at 1 November 2021</em>
+      </p>
+      <p>
+        Zip’s Rewards Program (<strong>Rewards Program</strong>) is our way of
+        rewarding you for using Zip!
+      </p>
+      <p>
+        <strong>1. Acceptance</strong>
+      </p>
+      <p>
+        You agree to comply with, and accept the terms and conditions of, these
+        Rewards Program T&amp;Cs (and any other T&amp;Cs that may apply from
+        time to time to this Rewards Program, including any specific Promotion
+        T&amp;Cs) on your first participation in a Promotion.
+      </p>
+      <p>
+        You also agree that we can communicate with you electronically about
+        this Rewards Program (and this Rewards Program’s Promotions) through the
+        App, SMS, email and any other electronic means that is made available
+        from time to time.
+      </p>
+      <p>
+        We may collect personal information about you in order to provide you
+        with the benefits of this Rewards Program and for the purposes otherwise
+        set out in our Privacy Policy at https://zip.co/page/privacy. We may use
+        and disclose your personal information (including transaction
+        information) for the purposes of providing direct and targeted
+        advertising to you in connection with our Rewards Program or our
+        services, more generally. If you do not wish to receive this
+        information, please follow the steps in our Privacy Policy.
+        <strong><em></em></strong>
+      </p>
+      <p>
+        Our Privacy Policy explains: (i) how we store and use, and how you may
+        access and correct personal information; (ii) how you can lodge
+        complaint regarding the handling of your personal information; and (iii)
+        how we will handle any complaint.
+      </p>
+      <p>
+        By providing your personal information to us, you consent to the
+        collection, use, storage and disclosure of that information as described
+        in the Privacy Policy and these Rewards Program T&amp;Cs.
+      </p>
+      <p>
+        <strong>2. Who are we</strong>
+      </p>
+      <p>This Rewards Program is offered and run by Zip.</p>
+      <p>
+        <strong>REWARDS PROGRAM</strong>
+      </p>
+      <p>
+        <strong>3. What is this Rewards Program</strong>
+      </p>
+      <p>
+        We are now formally introducing our Rewards Program! As we said above,
+        this is our way of rewarding you for using Zip as a payment method.
+      </p>
+      <p>
+        Every time you engage in an <strong>Eligible Activity</strong>, you are
+        accumulating<strong> Rewards</strong> and on your way to meeting your
+        <strong>Rewards Target</strong>.
+      </p>
+      <p>
+        When you reach that Rewards Target, you may ask us to redeem the value
+        of the Rewards Target as a credit to your Zip Pay account (or to any
+        other Zip Account or means that we make available to you, from time to
+        time). That’s right – we reward you, so you can keep using Zip at those
+        shops you love!
+      </p>
+      <p>
+        You can accumulate Rewards towards the Rewards Targets by participating
+        in our Promotions. Promotions can be used in conjunction with one
+        another – you have the flexibility to participate in as many Promotions
+        as you like to accumulate Rewards towards the Reward Target.
+      </p>
+      <p>
+        At this time, this Rewards Program only applies to eligible Zip Pay
+        transactions. But we reserve the right to (and come on, you probably
+        want us to) expand this Rewards Program to other Zip transactions,
+        services or products. If we do, we will let you know (in the App or
+        through other communications methods). If you have unsubscribed from
+        receiving our marketing, you will not receive these notices (but don’t
+        worry, you can reach out to us by emailing hello@care.zip.co to
+        resubscribe to marketing).
+      </p>
+      <p>
+        <strong>4. </strong>
+        <strong>Reward </strong>
+        <strong>Promotions</strong>
+      </p>
+      <p>
+        Here at Zip, we like to keep things fresh for you! This is why we let
+        you accumulate Rewards via our Promotions.
+      </p>
+      <p>
+        These Promotions will vary – some will be longer term, general
+        Promotions, while others will be targeted (for example, they may be
+        linked to a specific retailer, subscription service, or activity).
+      </p>
+      <p>
+        Each Promotion will have a different Reward. The time it takes to meet
+        your Rewards Target will depend on your participation in Promotions and
+        the rate of Reward under each Promotion.
+      </p>
+      <p>You can monitor your Reward balance in the App. <strong></strong></p>
+      <p>
+        <strong>5. How do I find out what </strong>
+        <strong>Reward </strong>
+        <strong>Promotions are running?</strong>
+      </p>
+      <p>We will inform you of all Promotions via our App.</p>
+      <p>
+        Each Promotion will have its <strong>own</strong> T&amp;Cs which may
+        include:
+      </p>
+      <p>● what Eligible Activities accumulate Rewards;</p>
+      <p>● the Reward for that Promotion;</p>
+      <p>● the Promotion period; and</p>
+      <p>● other key conditions and features.</p>
+      <p>
+        <br />
+        By participating in a Promotion, you agree to be bound by the relevant
+        Promotion T&amp;Cs.
+      </p>
+      <p>
+        <em><u>What is an Eligible Activity? </u></em>
+      </p>
+      <p>
+        These may vary depending on the Promotion, but in a nutshell, any
+        activity that accumulates a Reward under a Promotion. Of course, we can
+        mix it up, so keep an eye on those Promotions!
+      </p>
+      <p>
+        <em><u>How much are Rewards worth?</u></em>
+      </p>
+      <p>
+        Again, the Reward value attached to any Eligible Activity will vary
+        depending on the Promotion. The Reward will be outlined in each
+        Promotion.
+      </p>
+      <p>
+        <strong>6. How do I redeem my Reward Target?</strong>
+      </p>
+      <p>
+        Via the App! Go to the Zip Rewards section of your App. You can request
+        a redemption of your Rewards equal to the Rewards Target once you have
+        reached or exceeded the Reward Target. You can only redeem your Rewards
+        in amounts that equal the Rewards Target – for example, if the Rewards
+        Target is $20 and you have accumulated $30 in Rewards, you can request a
+        redemption of $30 which will reduce your post-redemption Rewards balance
+        to $10.
+      </p>
+      <p>
+        We are not obliged to agree to your redemption request unless you comply
+        with the Rules outlined below. If we do agree to your request, the
+        amount of the redeemed Reward Target will:
+      </p>
+      <p>
+        ● be applied as a credit to your Zip Account, or made available to you
+        (other than in cash) to pay for other goods or services, within 5
+        Business Days of redemption. This credit is not applied to the minimum
+        monthly payment you are required to pay under the Zip Account T&amp;Cs.
+      </p>
+      <p>
+        ● if applicable, appear as a transaction on your Zip statement with the
+        following description: Reward redeemed.
+      </p>
+      <p>
+        Redemption of any Reward Target is subject to you complying with the
+        below Rules and the Rewards Program T&amp;Cs.
+      </p>
+      <p>
+        Unless we advise otherwise, you cannot reverse a redemption once it is
+        made.
+      </p>
+      <p>
+        <strong>RULES</strong>
+      </p>
+      <p>
+        <strong>7. Participation</strong>
+      </p>
+      <p>
+        By participating in this Rewards Program and in any particular
+        Promotion, you agree to be bound by the following rules:
+      </p>
+      <p>
+        <strong>8. Reward &amp; Reward Target Rules</strong>
+      </p>
+      <p>
+        A maximum Reward per Eligible Activity may apply. If it does, it will be
+        stated in Promotion T&amp;Cs.
+      </p>
+      <p>
+        You may accumulate up to a monetary equivalent value of $1,000 in
+        Rewards in any consecutive 30 day period. Any accumulation above the
+        monetary equivalent value of $1,000 in this consecutive period is
+        forfeited. For example, if you accumulate and redeem $300 in Rewards on
+        day 15 of a consecutive 30 day period, you can only accumulate and/or
+        redeem a further $700 in Rewards in the remaining 15 days in a
+        consecutive 30 day period.
+      </p>
+      <p>
+        Your Rewards balance cannot exceed the monetary equivalent value of
+        $1,000 in Rewards at any time. Once this monetary equivalent value is
+        reached, the Rewards must be redeemed (via the Reward Target) before
+        further Rewards may be accumulated. This is always subject to the
+        maximum accrual of a monetary equivalent value of $1,000 in Rewards in
+        any consecutive 30 day period.
+      </p>
+      <p>
+        The Reward Target is subject to change. Once you have met one Reward
+        Target and redeemed the accumulation of your Rewards equal to the Reward
+        Target, we will notify you of your new Reward Target in the App. Your
+        post-redemption Rewards balance and all subsequent accrual of Rewards
+        will then be applied towards the new Rewards Target.
+      </p>
+      <p>
+        You can only redeem 6 Reward Targets in each consecutive 24 hour period.
+      </p>
+      <p>
+        You cannot request a redemption of (and we are not liable to you for)
+        any Reward amount that is less than the Reward Target.
+      </p>
+      <p>
+        Rewards are not money or a deposit or property and cannot be sold or
+        transferred to third parties.
+      </p>
+      <p>
+        Rewards are not refundable for cash if you do not redeem them prior to
+        expiry.
+      </p>
+      <p>
+        <strong>9. Excluded Transactions</strong>
+      </p>
+      <p>
+        The Promotion T&amp;Cs will specify the transactions that are considered
+        to be Eligible Activities. Without limiting the criteria in the
+        Promotion T&amp;Cs, you agree that you cannot accumulate Rewards on:
+      </p>
+      <ul>
+        <li>unauthorised transactions on your Zip Account;</li>
+        <li>
+          any transactions that we reasonably suspect are suspicious, fraudulent
+          or illegal;
+        </li>
+        <li>wire transfers;</li>
+        <li>betting/casino gambling;</li>
+        <li>
+          any other transactions reasonably determined by Zip from time to time;
+          and
+        </li>
+        <li>
+          any other transactions blocked or declined by Zip in accordance with
+          the relevant Zip Account T&amp;Cs.
+        </li>
+      </ul>
+      <p>
+        <strong>10. Redemption Rules</strong>
+      </p>
+      <p>
+        Unless otherwise stated, the Rewards Target can only be redeemed as
+        credit to your Zip Pay account which will reduce your Outstanding
+        Balance. You will not be able to withdraw the credit from your Zip
+        Account or convert it to cash.
+      </p>
+      <p>We may, at our discretion, make other redemption methods available.</p>
+      <p>
+        If your Zip Account is in arrears as at the time you redeem a Reward
+        Target, the credit value of the Reward Target will result in a reduction
+        of the amount you owe to Zip. This credit value is not applied to the
+        minimum monthly payment you are required to pay under the Zip Account
+        T&amp;Cs – you must continue to pay us this amount in accordance with
+        the Zip Account T&amp;C.
+      </p>
+      <p>
+        <strong>
+          11. Refund, cancellation or variation of transactions rules
+        </strong>
+      </p>
+      <p>
+        Should any order, transaction, purchase, or activity associated with an
+        Eligible Activity be cancelled, refunded, or varied in any manner
+        (including a partial refund), Zip reserves the right to deduct the
+        applicable Reward amount from your Reward balance by an amount that is
+        equivalent to the cancellation, refund, or variation and the
+        corresponding Reward amount earned for a particular Promotion (the
+        <strong>Adjustment Amount</strong>). For example, if you accumulated a
+        $10 Reward for an Eligible Activity and that Eligible Activity that is
+        subsequently reversed, we will reduce your Reward balance by $10 once
+        the reversal is processed.
+      </p>
+      <p>
+        If your Rewards balance is less than the Adjustment Amount, you agree
+        that Zip may recoup the Adjustment Amount through a reduction in future
+        Reward redemptions or debiting the Adjustment Amount from your Zip
+        Account.
+      </p>
+      <p>
+        <strong></strong>
+      </p>
+      <p>
+        <strong>12. Rewards Program participation rules</strong>
+      </p>
+      <p>
+        Put simply – if you have a Zip Pay account and you have downloaded our
+        App, you are eligible to take part in this Rewards Program. Employees,
+        officers, directors, agents and our representatives are eligible to take
+        part too (but sorry guys, you may be excluded from some Promotions).
+      </p>
+      <p>
+        We may choose to expand our participation rules at any time, at our
+        discretion.
+      </p>
+      <p>
+        Participation in this Rewards Program is subject to your Zip Account
+        remaining open and being kept in good standing - this means that we are
+        allowing you to transact on your Zip Account. If your Zip Account is
+        locked or you are denied access for any reason, you will be ineligible
+        to participate in the Rewards Program or any Promotion for the period
+        your account is locked or access is denied.
+      </p>
+      <p>
+        <strong>13. </strong>
+        <strong>Exclusion and decline rules</strong>
+      </p>
+      <p>
+        If, acting reasonably, we believe that you (or a third party, including
+        any Zip merchant):
+      </p>
+      <p>
+        ● are engaging in suspicious, fraudulent, deceptive or dishonest conduct
+        in connection with the Rewards Program or a Promotion; or
+      </p>
+      <p>
+        ● are in breach of these Rewards Program T&amp;Cs or any applicable Zip
+        T&amp;Cs (including your Zip Account T&amp;Cs),
+      </p>
+      <p>we reserve the right at any time to:</p>
+      <p>
+        ● exclude, cancel or block you from taking part in the Rewards Program
+        or Promotion;
+      </p>
+      <p>● block, cancel, delay or decline the redemption of any Rewards ;or</p>
+      <p>
+        ● where a Reward Target (or applicable Reward amount) has been redeemed
+        as a credit to your Zip Account (or redeemed through another means):
+      </p>
+      <p>
+        o reverse the redemption from your Zip Account or cancel the redemption
+        through another means; or
+      </p>
+      <p>
+        o deduct the applicable redemption value from your Reward balance. If
+        your Rewards balance is less than the applicable redemption value, you
+        agree that Zip may recover the applicable redemption value through a
+        reduction in future Reward redemptions.
+      </p>
+      <p>
+        We may also exercise any rights that are available to us under the Zip
+        Account T&amp;Cs. In addition to any of the above, should you engage in
+        behaviour that breaches your Zip Account T&amp;Cs (including making
+        payments into your Zip Account that result in your account being in
+        credit), we will exercise our rights to close or deny access to your Zip
+        Account
+      </p>
+      <p>
+        <strong>14. Expiry</strong>
+        <strong> and cancellation of Rewards or Rewards Target</strong>
+      </p>
+      <p>
+        Any accumulated Rewards that have not been redeemed will expire 12
+        months after the date they were accumulated to your Rewards balance.
+      </p>
+      <p>Any accumulated Reward will also be cancelled:</p>
+      <ul>
+        <li>
+          if your Zip Account is closed by you and you have not redeemed your
+          Rewards before this closure; or
+        </li>
+        <li>
+          if Zip, acting in accordance with its rights under the relevant Zip
+          Account T&amp;Cs, closes or denies access to your Zip Account;
+        </li>
+        <li>
+          we reasonably suspect that you accumulated the Reward in breach of the
+          Rewards Program T&amp;Cs or Promotion T&amp;C, or through suspicious,
+          fraudulent or illegal activity;
+        </li>
+        <li>
+          if the Reward was accumulated as a result of suspected unauthorised
+          use of your Zip Account;
+        </li>
+        <li>
+          if we incorrectly accumulated the Reward when you did not engage in
+          Eligible Activity; or
+        </li>
+        <li>on termination of the Rewards Program.</li>
+      </ul>
+      <p>
+        <strong>OTHER LEGAL STUFF</strong>
+      </p>
+      <p>
+        <strong>15. Complaints</strong>
+      </p>
+      <p>
+        We don’t like having unsatisfied customers, so if you have any
+        complaints relating to the Rewards Program, please reach out to our
+        customer service team.
+      </p>
+      <p>
+        Details on our complaints’ management processes (including contact
+        details and timeframes) can be found here
+        https://zip.co/page/disputes-and-complaints.
+      </p>
+      <p>
+        <strong>16. Changes to the Rewards Program T&amp;Cs</strong>
+      </p>
+      <p>
+        We may vary the Rewards Program T&amp;Cs (including Promotion T&amp;Cs)
+        at any time.
+      </p>
+      <p>
+        Unless the change is unfavourable to you, we will notify you of these
+        variations via the App, on our Website, or any other means we make
+        available to you, as soon as reasonably practicable and generally no
+        later than the day of the change. Where such a change is unfavourable to
+        you, we will provide you with at least 10 Business Days' notice via the
+        App, on our Website or any other means we make available to you.
+      </p>
+      <p>
+        We may suspend or terminate the Rewards Program or any Promotion at any
+        time on 10 Business Days' notice to you, however we may do so with a
+        shorter notice period or no notice period if it is reasonably necessary
+        for us to protect our legitimate business interests.
+      </p>
+      <p>
+        If we give you notice that we are terminating the Rewards Program, you
+        must make all eligible Reward redemptions during this 10 Business Day
+        period (or shorter period, as applicable), following which your Rewards
+        will be cancelled.
+      </p>
+      <p>
+        <strong>17. Warranty disclaimer</strong>
+      </p>
+      <p>
+        To the maximum extent permitted under applicable laws, we do not make
+        any warranties or representations on the delivery, service, quality,
+        quantity, merchantability, suitability or availability of:
+      </p>
+      <p>
+        ● the products or services sold on any merchant or partner websites or
+        at any instore premises; and
+      </p>
+      <p>
+        ● our App, Website, or any other third party service used in the
+        provision of the Rewards Program being timely, uninterrupted, or error
+        free.
+      </p>
+      <p>
+        Nothing in these conditions is intended to exclude, restrict or modify
+        any non-excludable right or remedy you have under law including the
+        Australian Consumer Law. Any disclaimer, exclusion, or limitation as
+        provided for in these conditions applies to the full extent permitted by
+        law and subject to any non-excludable right or remedy.
+      </p>
+      <p>
+        <strong>18. Liability</strong>
+      </p>
+      <p>
+        To the extent permitted under any applicable law, we (including any of
+        our employees, officers, or agents) will not be liable for any loss or
+        claim of any kind arising out of or in connection to the Rewards Program
+        (including any loss, theft or destruction of Rewards or failure to
+        supply access to the Rewards Program or a Promotion).
+      </p>
+      <p>
+        If we, by law, are liable for a breach of any implied term, we limit our
+        liability to the amount of the Rewards Target.
+      </p>
+      <p>
+        <strong>19. Tax implications </strong>
+      </p>
+      <p>
+        You are solely responsible for any tax liability, stamp duty or other
+        government charges in connection with your participation in the Rewards
+        Program and the redemption of any Reward.
+      </p>
+      <p>
+        <strong>20. Governing law</strong>
+      </p>
+      <p>
+        The Rewards Program T&amp;Cs are governed by the law in force in New
+        South Wales. You submit to the nonexclusive jurisdiction of the courts
+        having jurisdiction under that law in relation to any proceedings about
+        or in connection with these T&amp;Cs.
+      </p>
+      <p>
+        <strong>21. Definitions</strong>
+      </p>
+      <p>
+        The following terms and expressions used in Rewards Program T&amp;Cs
+        have the following meanings, except where the contrary intention
+        appears:
+      </p>
+      <p>
+        <strong>‘App’ </strong>
+        means the mobile application we make available to use your Zip accounts.
+      </p>
+      <p>
+        ‘<strong>Business Day</strong>’ means a day that is not a Saturday,
+        Sunday, or public holiday in New South Wales.
+      </p>
+      <p>
+        <strong>‘Reward’</strong>
+        is a monetary equivalent value determined by Zip and attached to an
+        Eligible Activity.
+      </p>
+      <p>
+        <strong>‘Eligible </strong>
+        <strong>Activity</strong>
+        <strong>’</strong>
+        is a transaction, order, purchase, or activity that is (a) authorised by
+        Zip and (b) part of Promotion that will accumulate a Reward.
+      </p>
+      <p>
+        <strong>'Outstanding Balance</strong>
+        ' means the difference between all amounts credited to and all amounts
+        debited from your Zip Account.
+      </p>
+      <p>
+        <strong>‘Promotion’</strong>
+        is a collective term we use to refer to any of our promotions. Each
+        Promotion is unique and allows you to earn Rewards.
+      </p>
+      <p>
+        <strong>'Promotion T&amp;Cs'</strong>
+        sets out the ‘Eligible Activity,’ promotion period, Reward and any other
+        special conditions specific to that Promotion. <strong></strong>
+      </p>
+      <p>
+        <strong>‘Rewards Program’ </strong>
+        is the overarching program which sets out how you can earn Rewards
+        through our Promotions.
+      </p>
+      <p>
+        <strong>‘Rewards Program T&amp;Cs’</strong>
+        includes these T&amp;Cs and any specific Promotion T&amp;Cs.
+      </p>
+      <p>
+        <strong>‘Rewards Target’</strong>
+        is the minimum monetary value of Rewards that must be accumulated before
+        you can request a redemption. We will notify you of your Rewards Target
+        in the App and may change this amount from time to time in accordance
+        with these Rewards Program T&amp;Cs.
+      </p>
+      <p>
+        <strong>‘T&amp;Cs’</strong>
+        means terms and conditions.
+      </p>
+      <p>
+        ‘<strong>Zip</strong>’ (‘we’, ‘us’, or ‘our’) means ZipMoney Payments
+        Pty Ltd ABN 58 164 440 993 Australian Credit Licence Number 441878.
+      </p>
+      <p>
+        ‘<strong>Zip Account</strong>’ means any Zip account (including a Zip
+        Pay account) that we allow you to use for an Eligible Activity.
+      </p>
+      <p>
+        <strong>'Website'</strong>
+        means zip.co or any other website that we may make available to you from
+        time to time.
+      </p>
+      <p>
+        <strong>22. Interpretation </strong>
+      </p>
+      <p>For the purposes of Rewards Program T&amp;Cs;</p>
+      <p>● the singular includes the plural and vice versa;</p>
+      <p>
+        ● the words “include” or “including” are not used as, nor are they to be
+        interpreted as, words of limitation, and, when introducing an example,
+        do not limit the meaning of the words to which the example relates to
+        that example or examples of a similar kind;
+      </p>
+      <p>● all references to $ or dollars are to Australian dollars; and</p>
+      <p>
+        ● reference to a ‘third party’ includes an individual, corporation, an
+        unincorporated association, government, state or agency of state,
+        association, partnership, joint venture, or firm.
+      </p>
+    </div>
+
+    <div class="bottom-container">
+      <div class="button">
+        <a
+          id="shop-now-button"
+          href="co.zip://deeplink/browser/vcn-browser/aHR0cHM6Ly9jbGljay5saW5rc3luZXJneS5jb20vZGVlcGxpbms_aWQ9eGRjNFovWnVhQlUmbWlkPTQzMzE2Jm11cmw9aHR0cHMlM0ElMkYlMkZ3d3cuY2l0eWJlYWNoLmNvbSUyRmF1JTJGaG9tZXBhZ2UmdXRtX3NvdXJjZT16aXAmdXRtX21lZGl1bT1yZWZlcnJhbCZ1dG1fY2FtcGFpZ249QXBwRmVlZCZsYWJlbD1wYWdlY29uZi1pbnBhdGgtMjE5MzczMi1jbGlja19tZW1iZXJpZC1lOTZkZTI0ZC01OTMyLTRlNDAtYmRlZi0zMjM4MzY4Yzg4MDEmdWlkPWU5NmRlMjRkLTU5MzItNGU0MC1iZGVmLTMyMzgzNjhjODgwMQ"
+          ><p>Shop now</p></a
+        >
+        <a
+          id="shop-now-button"
+          href="co.zip://deeplink/browser/vcn-browser/aHR0cHM6Ly9jbGljay5saW5rc3luZXJneS5jb20vZGVlcGxpbms_aWQ9eGRjNFovWnVhQlUmbWlkPTQzMzE2Jm11cmw9aHR0cHMlM0ElMkYlMkZ3d3cuY2l0eWJlYWNoLmNvbSUyRmF1JTJGaG9tZXBhZ2UmdXRtX3NvdXJjZT16aXAmdXRtX21lZGl1bT1yZWZlcnJhbCZ1dG1fY2FtcGFpZ249QXBwRmVlZCZsYWJlbD1wYWdlY29uZi1pbnBhdGgtMjE5MzczMi1jbGlja19tZW1iZXJpZC1lOTZkZTI0ZC01OTMyLTRlNDAtYmRlZi0zMjM4MzY4Yzg4MDEmdWlkPWU5NmRlMjRkLTU5MzItNGU0MC1iZGVmLTMyMzgzNjhjODgwMQ"
+          ><p>Shop now</p></a
+        >
+      </div>
+    </div>
+
+    <script lang="javascript">
+      async function getCashbackOffer() {
+          let url = new URL(window.location.href)
+          let entryId = url.searchParams.get("entryId")
+          let customerId = url.searchParams.get("uid") ?? ""
+
+          const prodRequest = new XMLHttpRequest()
+          prodRequest.open("GET", `https://api.prod.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+          prodRequest.send()
+
+          prodRequest.onload = () => {
+              if (prodRequest.status !== 200) {
+                  const sandRequest = new XMLHttpRequest()
+                  sandRequest.open("GET", `https://api.sand.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+                  sandRequest.send()
+
+                  sandRequest.onload = () => {
+                      if (sandRequest.status !== 200) return
+                      setUI(sandRequest, "co.zip.sandbox://")
+                  }
+              } else {
+                  setUI(prodRequest, "co.zip://")
+              }
+          }
+
+          prodRequest.onerror = () => {
+              const sandRequest = new XMLHttpRequest()
+              sandRequest.open("GET", `https://api.sand.au.edge.zip.co/api/shop/central/entry/cashback/${entryId}?customerId=${customerId}`)
+              sandRequest.send()
+
+              sandRequest.onload = () => {
+                  if (sandRequest.status !== 200) return
+                  setUI(sandRequest, "co.zip.sandbox://")
+              }
+          }
+      }
+
+      function setUI(request, bundleId) {
+          let data = JSON.parse(request.response)
+
+          let isMerchantOpenLoop = data.merchant.type === 'OpenLoop'
+          let merchantName = data.merchant.name
+
+          // heading
+          document.getElementById("heading").innerText = `${data.cashbackPercentage}% Cashback`
+
+          // sub-heading
+          // if (data.cashbackLimit !== null) {
+          //     if (isMerchantOpenLoop) {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback up to $${data.cashbackLimit} per transaction when you checkout online using a single-use card in the Zip app.`
+          //     } else {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback up to $${data.cashbackLimit} per transaction when you transact online at ${merchantName} using your Zip Account at checkout.`
+          //     }
+          // } else {
+          //     if (isMerchantOpenLoop) {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback per transaction when you checkout online using a single-use card in the Zip app.`
+          //     } else {
+          //         document.getElementById("sub-heading").innerText = `Earn ${data.cashbackPercentage}% cashback per transaction when you transact online at ${merchantName} using your Zip Account at checkout`
+          //     }
+          // }
+
+          // additional terms & conditions
+          if (data.additionalTermsConditions != null) {
+              document.getElementById("additional-terms-conditions").innerHTML = `<i>${data.additionalTermsConditions}</i>`
+          }
+
+          // how to earn
+          if (isMerchantOpenLoop) {
+              document.getElementById("how-to-step-3").innerText = `Tap “Pay with Zip” and checkout with a single-use card`
+          } else {
+              document.getElementById("how-to-step-3").innerText = `Select Zip at checkout and pay with your Zip Account`
+          }
+
+          // offer terms
+          if (data.cashbackLimit !== null) {
+              var offerTerms = ``
+              if (isMerchantOpenLoop) {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using Zip’s single-use card at checkout to earn ${data.cashbackPercentage}% cashback up to a maximum of $${data.cashbackLimit} per eligible transaction. Redeemable when you reach the Rewards goal.`
+              } else {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using your Zip Account at checkout to earn ${data.cashbackPercentage}% cashback up to a maximum of $${data.cashbackLimit} per eligible transaction. Redeemable when you reach the Rewards goal.`
+              }
+
+              if (data.endDate !== null) {
+                  let date = new Date(data.endDate)
+                  let datetime = date.toLocaleDateString() + " " + formatAMPM(date) + " AEDT."
+                  offerTerms += ` Promotion ends on ${datetime}`
+              }
+              offerTerms += ` Reward Program T&Cs apply.`
+              document.getElementById("offer-terms").innerText = offerTerms
+          } else {
+              var offerTerms = ``
+              if (isMerchantOpenLoop) {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using Zip’s single-use card at checkout to earn ${data.cashbackPercentage}% cashback per eligible transaction. Redeemable when you reach the Rewards goal.`
+              } else {
+                  offerTerms = `Click this promotion tile and transact online at ${merchantName} using your Zip Account at checkout to earn ${data.cashbackPercentage}% cashback per eligible transaction. Redeemable when you reach the Rewards goal.`
+              }
+
+              if (data.endDate) {
+                  let date = new Date(data.endDate)
+                  let datetime = date.toLocaleDateString() + " " + formatAMPM(date) + " AEDT."
+                  offerTerms += ` Promotion ends on ${datetime}`
+              }
+              offerTerms += ` Reward Program T&Cs apply.`
+              document.getElementById("offer-terms").innerText = offerTerms
+          }
+
+          // background image (top-section)
+          if (data.imageUrl !== null) {
+              document.getElementById("top-section").style.backgroundImage = `linear-gradient(to bottom, rgba(245, 246, 252, 0) 30%, rgb(29, 29, 29) 155%), url('${data.imageUrl}')`
+          } else {
+              document.getElementById("top-section").style.backgroundImage = `linear-gradient(to bottom, rgba(245, 246, 252, 0) 30%, rgb(29, 29, 29) 155%), url('${data.merchant.backgroundImageUrl}')`
+          }
+
+          // logo image (logo-section)
+          if (data.merchant.bubbleImageUrl !== null) {
+              document.getElementById("logo-image").style.backgroundImage = `url('${data.merchant.bubbleImageUrl}')`
+              document.getElementById("logo-image-greyscale").style.display = 'none'
+
+              // merchant name (top-section-heading)
+              document.getElementById("top-section-heading").innerText = data.merchant.name
+              document.getElementById("top-section-subheading").innerText = "Cashback offer"
+          } else if (data.merchant.logoImageUrl !== null) {
+              document.getElementById("logo-image").style.display = 'none'
+              document.getElementById("logo-section").style.backgroundColor = 'white'
+              document.getElementById("logo-image-greyscale").style.backgroundImage = `url('${data.merchant.logoImageUrl}')`
+
+              // merchant name (top-section-heading)
+              document.getElementById("top-section-heading").innerText = data.merchant.name
+              document.getElementById("top-section-subheading").innerText = "Cashback offer"
+          }
+
+          // shop now button
+          let url = new URL(window.location.href)
+          let isFromSearch = url.searchParams.get("isFromSearch")
+          if (isFromSearch !== null && isFromSearch) {
+              document.getElementById("shop-now-button").href = `${bundleId}${data.offerDeeplinkUri}?isFromSearch=true`
+          } else {
+              document.getElementById("shop-now-button").href = `${bundleId}${data.offerDeeplinkUri}`
+          }
+      }
+
+      function formatAMPM(date) {
+          var hours = date.getHours()
+          var minutes = date.getMinutes()
+          var ampm = hours >= 12 ? 'pm' : 'am'
+          hours = hours % 12
+          hours = hours ? hours : 12 // the hour '0' should be '12'
+          minutes = minutes < 10 ? '0'+minutes : minutes
+          var strTime = hours + ':' + minutes + ' ' + ampm
+          return strTime
+      }
+    </script>
+  </body>
+  <loom-container id="lo-engage-ext-container"
+    ><loom-shadow classname="resolved"></loom-shadow></loom-container
+  ><loom-container id="lo-companion-container"
+    ><loom-shadow classname="resolved"></loom-shadow
+  ></loom-container>
+</html>
